@@ -1,7 +1,6 @@
 
 package hitungfibonacci;
-
-
+import java.util.Scanner;
 public class LangkahPraktek {
 
    
@@ -16,5 +15,16 @@ public class LangkahPraktek {
     String identitas = "Alya Selvia Tamzila / XRPL2 / 03";
     
     tampilJudul(identitas);
+    int n = tampilInput();
     }
+    
+    public static int tampilInput(){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Bilangan ke-: ");
+        int n = scanner.nextInt();
+        
+        return n;
+    }
+    
 }
