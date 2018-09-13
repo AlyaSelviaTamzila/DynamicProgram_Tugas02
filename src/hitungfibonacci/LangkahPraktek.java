@@ -1,6 +1,7 @@
 
 package hitungfibonacci;
 import java.util.Scanner;
+import java.math.BigInteger;
 public class LangkahPraktek {
 
    
@@ -18,7 +19,7 @@ public class LangkahPraktek {
     int n = tampilInput();
     }
     
-    public static int tampilInput(){
+    private static int tampilInput(){
         Scanner scanner = new Scanner(System.in);
         
         System.out.print("Bilangan ke-: ");
@@ -26,5 +27,4 @@ public class LangkahPraktek {
         
         return n;
     }
-    
 }
