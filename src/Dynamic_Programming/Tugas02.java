@@ -11,5 +11,12 @@ public class Tugas02 {
         Scanner scan = new Scanner(System.in);
         System.out.print("Jumlah berat: ");
         int total = scan.nextInt();
+        
+         for (int i = 0; i < berat.length; i++) {
+            int jumlah = total / berat[i];
+            total = total - (berat[i]*jumlah);
+            
+            System.out.println("jumlah" + berat[i] + "=" + jumlah);
+        }
     }
 }
